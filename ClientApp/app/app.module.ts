@@ -7,6 +7,7 @@ import { AccountSummaryComponent } from './components/account/account-summary/ac
 import { AccountDetailComponent } from './components/account/account-detail/account-detail.component'
 import { HeaderComponent } from './components/shared/header/header.component'
 import { FormatAccountNumberPipe } from './components/shared/format.account-number.pipe'
+import { AccountService } from './components/shared/account.service'
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { FormatAccountNumberPipe } from './components/shared/format.account-numb
             { path: 'detail/:id', component: AccountDetailComponent },
             { path: '**', redirectTo: 'account' }
         ])
-    ]
+    ],
+    providers: [AccountService]
 })
 export class AppModule {
 }
