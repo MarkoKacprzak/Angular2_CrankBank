@@ -1,6 +1,6 @@
 ﻿import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import 'rxjs/Rx';
+import 'rxjs/Rx'; //Reactive Extensions
 
 import { AccountSummary } from './account-summary.type'
 import { AccountDetail } from './account-detail.type'
