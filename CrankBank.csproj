@@ -22,6 +22,7 @@
     <Content Include="wwwroot\assets\__dummy__" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ClientApp\app\components\account\NewFolder\" />
     <Folder Include="wwwroot\assets\" />
   </ItemGroup>
   <Target Name="RunWebpack" AfterTargets="ComputeFilesToPublish">
