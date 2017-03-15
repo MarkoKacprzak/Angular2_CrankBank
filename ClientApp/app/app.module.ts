@@ -6,6 +6,7 @@ import { AccountListComponent } from './components/account/account-list/account-
 import { AccountSummaryComponent } from './components/account/account-summary/account-summary.component'
 import { AccountDetailComponent } from './components/account/account-detail/account-detail.component'
 import { HeaderComponent } from './components/shared/header/header.component'
+import { FormatAccountNumberPipe } from './components/shared/format.account-number.pipe'
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HeaderComponent } from './components/shared/header/header.component'
         AccountListComponent,
         AccountDetailComponent,
         AccountSummaryComponent,
-        HeaderComponent
+        HeaderComponent,
+        FormatAccountNumberPipe
     ],
     imports: [
         UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
